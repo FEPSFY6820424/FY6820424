@@ -91,6 +91,7 @@ becoming all the more central to society <a href="https://www.statista.com/stati
 	</figure>
   </p>
   	
+  <br>
   <h3 id="Analysis and discussion">Analysis and discussion</h3>
   <p class="ex1">
   	<pre>
@@ -231,9 +232,9 @@ ethical and environmental concerns of AI and establish a safe and controlled fra
 
 
     	</pre>
-
-	  <h3 id="Reference List">Reference List</h3>
-	  <p class="ex1">
+</p>
+<h3 id="Reference List">Reference List</h3>
+<p class="ex1">
   	<pre>
 Reference list:
 	Wirtz et al: <a href="https://surrey.primo.exlibrisgroup.com/discovery/delivery?vid=44SUR_INST:ResearchRepository&repId=12194300950002346#13194300940002346">https://surrey.primo.exlibrisgroup.com/discovery/delivery?vid=44SUR_INST:ResearchRepository&repId=12194300950002346#13194300940002346</a>
@@ -249,9 +250,82 @@ Reference list:
 	Roundy: <a href="https://www.techtarget.com/searchdatacenter/feature/Assess-the-environmental-impact-of-data-centers#:~:text=Data%20centers%20and%20data%20transmission,cut%20in%20half%20by%202030">https://www.techtarget.com/searchdatacenter/feature/Assess-the-environmental-impact-of-data-centers#:~:text=Data%20centers%20and%20data%20transmission,cut%20in%20half%20by%202030</a>
 	GRC: <a href="https://www.grcooling.com/blog/the-effects-of-data-centers-on-the-environment/">https://www.grcooling.com/blog/the-effects-of-data-centers-on-the-environment/</a>
 	</pre>
+</p>
 
-	  
-	<iframe src="https://surreyac-my.sharepoint.com/personal/ac02900_surrey_ac_uk/_layouts/15/Doc.aspx?sourcedoc={6f97c14e-37e6-43f4-b514-86e42b7d7e61}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="900px" height="540px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<h2>Conference Presentation: Conference Paper: - Evaluating AI’s Impact on Society – Prospects, Perils, and The Path Forward</h2>
+<script>
+	var slideImages = ["Slide1.JPG", "Slide2.JPG", "Slide3.JPG", "Slide4.JPG", "Slide5.JPG",];
+	var currentSlid = 0;
+
+	function showSlide() {
+		document.getElementById('slide').src = slideImages[currentSlide];
+	}
+
+	function nextSlide() {
+		currentSlide = (currentSlide + 1) % slideImages.length;
+		showSlide();
+	}
+
+	function prevSlide(){
+		currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+		showSlide();
+	}
+
+	function showSlideNumber(slideNumber){
+		currentSlide = slideNumber - 1;
+		showSlide();
+	}
+	showSlide()
+</script>
+<div id = "slide-container">
+	<img id="slide" src="Slide1.JPG" alt="Slide1" style="width:100%; max-width:800px;">
+</div>
+
+<div class = "button-container">
+	<button class = "button" onclick="prevSlide()">Previous</button>
+	<button class = "button" onclick="nextSlide()">Next</button>
+</div>
+
+<div class="slide-number-container">
+	<button class="button" onclick="showSlideNumber(1)">1</button>
+	<button class="button" onclick="showSlideNumber(2)">2</button>
+	<button class="button" onclick="showSlideNumber(3)">3</button>
+	<button class="button" onclick="showSlideNumber(4)">4</button>
+</div>
+<style>
+	#slide-container {
+		text-align: center;
+		position: relative;
+	}
+
+	.button-container {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: -100px;
+	}
+	
+	.button {
+		padding: 10px 20px;
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		cursor: pointer;
+		margin: 0 5px;
+	}
+
+	.slide-number-counter {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: -50px;
+	}
+</style>
+	
     
     
     
